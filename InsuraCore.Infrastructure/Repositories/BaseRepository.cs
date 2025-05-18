@@ -1,16 +1,16 @@
-using Api.Domain.Entities;
-using Api.Domain.Interfaces;
-using Api.Infrastructure.Data;
+using InsuraCore.Domain.Entities;
+using InsuraCore.Domain.Interfaces;
+using InsuraCore.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api.Infrastructure.Repositories
+namespace InsuraCore.Infrastructure.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
-        protected readonly ApiDbContext _context;
+        protected readonly InsuraCoreDbContext _context;
         protected readonly DbSet<T> _dbSet;
 
-        public BaseRepository(ApiDbContext context)
+        public BaseRepository(InsuraCoreDbContext context)
         {
             _context = context;
             _dbSet = context.Set<T>();

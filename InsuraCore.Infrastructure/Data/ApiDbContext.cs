@@ -1,11 +1,11 @@
-using Api.Domain.Entities;
+using InsuraCore.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api.Infrastructure.Data
+namespace InsuraCore.Infrastructure.Data
 {
-    public class ApiDbContext : DbContext
+    public class InsuraCoreDbContext : DbContext
     {
-        public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options)
+        public InsuraCoreDbContext(DbContextOptions<InsuraCoreDbContext> options) : base(options)
         {
         }
 

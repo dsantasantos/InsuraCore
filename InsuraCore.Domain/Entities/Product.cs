@@ -1,4 +1,4 @@
-namespace Api.Domain.Entities
+namespace InsuraCore.Domain.Entities
 {
     public class Product : BaseEntity
     {

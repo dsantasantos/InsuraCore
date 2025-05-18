@@ -1,6 +1,6 @@
-using Api.Domain.Entities;
+using InsuraCore.Domain.Entities;
 
-namespace Api.Domain.Interfaces
+namespace InsuraCore.Domain.Interfaces
 {
     public interface IBaseRepository<T> where T : BaseEntity
     {
